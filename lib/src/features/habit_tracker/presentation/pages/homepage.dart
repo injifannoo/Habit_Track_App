@@ -7,10 +7,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Habit Tracker'),
+        title: const Text('Habit Tracker app'),
       ),
       body: const Center(
-        child: Text('Welcome to Habit Tracker!'),
+        child: Text('Welcome to Habit Tracker! I am here to change your habits.'),
       ),
     );
   }
