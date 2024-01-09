@@ -1,8 +1,7 @@
-import 'package:habit_tracker/features/habit_tracker/domain/entities/habit.dart';
+import 'package:habit_tracker_app/src/features/habit_tracker/domain/entities/habit.dart';
 
 class HabitModel extends Habit {
-  HabitModel({required String name, required bool completed})
-      : super(name: name, completed: completed);
+  HabitModel({required super.name, required super.completed});
 
   // Factory constructor to convert JSON to HabitModel
   factory HabitModel.fromJson(Map<String, dynamic> json) {
