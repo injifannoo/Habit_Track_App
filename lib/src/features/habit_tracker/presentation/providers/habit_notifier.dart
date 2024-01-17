@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:habit_tracker/features/habit_tracker/domain/use_cases/add_habit.dart';
-import 'package:habit_tracker/features/habit_tracker/domain/use_cases/toggle_habit.dart';
-import 'package:habit_tracker/features/habit_tracker/domain/entities/habit.dart';
+import 'package:habit_tracker_app/src/features/habit_tracker/domain/use_cases/add_habit.dart';
+import 'package:habit_tracker_app/src/features/habit_tracker/domain/use_cases/toggle_habit.dart';
+import 'package:habit_tracker_app/src/features/habit_tracker/domain/entities/habit.dart';
 
 class HabitNotifier extends StateNotifier<List<Habit>> {
   final AddHabit addHabit;
