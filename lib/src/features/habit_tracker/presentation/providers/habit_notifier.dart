@@ -16,7 +16,7 @@ class HabitNotifier extends StateNotifier<List<Habit>> {
   }
 
   void toggleHabitStatus(int index) {
-    toggleHabit(index);
+    toggleHabit(index as Habit);
     state = [
       for (int i = 0; i < state.length; i++)
         if (i == index) state[i].toggle() else state[i]
