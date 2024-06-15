@@ -7,4 +7,11 @@ class Habit {
   Habit toggle() {
     return Habit(name: name, completed: !completed);
   }
+    Habit copyWith({String? name, bool? completed}) {
+    return Habit(
+      name: name ?? this.name,
+      completed: completed ?? this.completed,
+    );
+  }
 }
+
