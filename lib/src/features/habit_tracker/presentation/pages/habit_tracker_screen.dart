@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:habit_tracker_app/src/features/habit_tracker/presentation/providers/habit_notifier.dart';
 
 class HabitTrackerScreen extends ConsumerWidget {
   const HabitTrackerScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final habits = ref.watch(habitProvider);
+    final habits = ref.watch(HabitNotifier as ProviderListenable);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Habit Tracker')),
@@ -20,7 +21,7 @@ class HabitTrackerScreen extends ConsumerWidget {
               habit.completed ? Icons.check_circle : Icons.circle,
               color: habit.completed ? Colors.green : Colors.grey,
             ),
-            onTap: () => ref.read(habitProvider.notifier).toggleHabitStatus(index),
+            onTap: () => ref.read(HabitNotifier as ProviderListenable).toggleHabitStatus(index),
           );
         },
       ),
@@ -49,7 +50,7 @@ class HabitTrackerScreen extends ConsumerWidget {
             TextButton(
               onPressed: () {
                 if (controller.text.isNotEmpty) {
-                  ref.read(habitProvider.notifier).addNewHabit(controller.text);
+                  ref.read(HabitNotifier as ProviderListenable).addNewHabit(controller.text);
                   Navigator.of(context).pop();
                 }
               },
