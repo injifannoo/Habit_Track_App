@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'habit_tracker_screen.dart';
-
+import 'package:habit_tracker_app/src/features/habit_tracker/presentation/pages/habit_tracker_screen.dart';
 void main() {
   runApp(const ProviderScope(child: MyApp()));
 }
