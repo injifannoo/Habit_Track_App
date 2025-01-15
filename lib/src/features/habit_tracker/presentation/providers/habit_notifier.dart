@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../models/habit.dart';
+import '../../domain/models/habit.dart';
 
 class HabitNotifier extends StateNotifier<List<Habit>> {
   HabitNotifier() : super([]);
