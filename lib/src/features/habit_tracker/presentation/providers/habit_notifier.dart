@@ -1,22 +1,25 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../domain/models/habit.dart';
+import 'package:habit_tracker/features/habit_tracker/domain/use_cases/add_habit.dart';
+import 'package:habit_tracker/features/habit_tracker/domain/use_cases/toggle_habit.dart';
+import 'package:habit_tracker/features/habit_tracker/domain/entities/habit.dart';
 
 class HabitNotifier extends StateNotifier<List<Habit>> {
-  HabitNotifier() : super([]);
+  final AddHabit addHabit;
+  final ToggleHabit toggleHabit;
 
-  void addHabit(String name) {
-    state = [...state, Habit(name: name, completed: false)];
+  HabitNotifier(this.addHabit, this.toggleHabit) : super([]);
+
+  void addNewHabit(String name) {
+    final habit = Habit(name: name, completed: false);
+    addHabit(habit);
+    state = [...state, habit];
   }
 
-  void toggleHabit(int index) {
+  void toggleHabitStatus(int index) {
+    toggleHabit(index);
     state = [
       for (int i = 0; i < state.length; i++)
         if (i == index) state[i].toggle() else state[i]
     ];
   }
 }
-
-// Creating the provider for HabitNotifier
-final habitProvider = StateNotifierProvider<HabitNotifier, List<Habit>>((ref) {
-  return HabitNotifier();
-});
