@@ -10,9 +10,7 @@ class HabitTrackerScreen extends ConsumerWidget {
     final habits = ref.watch(habitProvider);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Habit Tracker'),
-      ),
+      appBar: AppBar(title: const Text('Habit Tracker')),
       body: ListView.builder(
         itemCount: habits.length,
         itemBuilder: (context, index) {
@@ -23,7 +21,7 @@ class HabitTrackerScreen extends ConsumerWidget {
               habit.completed ? Icons.check_circle : Icons.circle,
               color: habit.completed ? Colors.green : Colors.grey,
             ),
-            onTap: () => ref.read(habitProvider.notifier).toggleHabit(index),
+            onTap: () => ref.read(habitProvider.notifier).toggleHabitStatus(index),
           );
         },
       ),
@@ -38,7 +36,7 @@ class HabitTrackerScreen extends ConsumerWidget {
 
   void _showAddHabitDialog(BuildContext context, WidgetRef ref) {
     final TextEditingController controller = TextEditingController();
-    
+
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -52,7 +50,7 @@ class HabitTrackerScreen extends ConsumerWidget {
             TextButton(
               onPressed: () {
                 if (controller.text.isNotEmpty) {
-                  ref.read(habitProvider.notifier).addHabit(controller.text);
+                  ref.read(habitProvider.notifier).addNewHabit(controller.text);
                   Navigator.of(context).pop();
                 }
               },
