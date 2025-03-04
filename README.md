@@ -23,7 +23,22 @@ This app follows **Clean Architecture** with the following structure:
    ```
 Here is the folder structure of the app:
 
-lib/ ├── core/ # Core functionalities │ ├── use_cases/ # Common use cases │ ├── errors/ # Error handling ├── features/ # Features like Habit Tracker │ ├── habit_tracker/ # Feature-specific directory │ │ ├── data/ # Data sources (API, DB) │ │ │ ├── models/ # Habit models │ │ │ └── repositories/ │ │ ├── domain/ # Business logic (use cases) │ │ │ ├── entities/ # Habit entity │ │ │ └── repositories/ │ │ └── presentation/ # Screens and widgets │ │ ├── providers/ # State management (Riverpod/Provider) │ │ ├── screens/ # Habit screens │ │ └── widgets/ # UI widgets ├── main.dart # Entry point
+lib/ ├── core/ # Core functionalities │ 
+   ├── use_cases/ # Common use cases │ 
+   ├── errors/ # Error handling 
+   ├── features/ # Features like Habit Tracker │
+      ├── habit_tracker/ # Feature-specific directory │ │
+         ├── data/ # Data sources (API, DB) │ │ │
+            ├── models/ # Habit models │ │ │
+            └── repositories/ │ │
+         ├── domain/ # Business logic (use cases) │ │ │
+            ├── entities/ # Habit entity │ │ │
+            └── repositories/ │
+         │ └── presentation/ # Screens and widgets │ │ 
+               ├── providers/ # State management (Riverpod/Provider) │ │
+         ├── screens/ # Habit screens ││
+         └── widgets/ # UI widgets
+   ├── main.dart # Entry point
    ```
 
 
@@ -59,7 +74,7 @@ The app uses the following dependencies:
 1. Clone the repository:
 
  ```bash
-git clone <your-repository-url>
+git clone https://github.com/injifannoo/Habit_Track_App.git
  ```
 
 2. Navigate to the project directory:
@@ -89,10 +104,11 @@ flutter run
 **Clean Architecture:** Codebase is structured based on Clean Architecture principles, which promotes separation of concerns, maintainability, and testability.
 
 Example UI
-Main Screen:
+**Main Screen:**
 The list displays habits with their names and completion status (checked or unchecked).
 A FloatingActionButton is provided to add a new habit.
-License
+
+**License**
 This project is open-source and available under the MIT License.
 
 
