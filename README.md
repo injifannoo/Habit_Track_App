@@ -63,8 +63,9 @@ The app uses the following dependencies:
   ```
 
 2. Navigate to the project directory:
-
+ ```bash
 cd habit_tracker_app
+ ```
 
 3. Run flutter pub get to install dependencies:
 
