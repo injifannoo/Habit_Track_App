@@ -60,20 +60,21 @@ The app uses the following dependencies:
 
    ```bash
    git clone <your-repository-url>
-```
-Navigate to the project directory:
+  ```
+
+2. Navigate to the project directory:
 
  ```bash
 cd habit_tracker_app
  ```
 
-Run flutter pub get to install dependencies:
+3. Run flutter pub get to install dependencies:
 
  ```bash
 flutter pub get
  ```
 
-Run the app using:
+4. Run the app using:
  ```bash
 flutter run
  ```
