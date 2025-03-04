@@ -60,22 +60,23 @@ The app uses the following dependencies:
 
    ```bash
    git clone <your-repository-url>
+```
 Navigate to the project directory:
 
  ```bash
 cd habit_tracker_app
- ```bash
+ ```
 
 Run flutter pub get to install dependencies:
 
  ```bash
 flutter pub get
- ```bash
+ ```
 
 Run the app using:
  ```bash
 flutter run
- ```bash
+ ```
 
 ## **How the App Works**
 **Add a Habit:** The user can add a new habit through the floating action button. A dialog will appear to input the name of the habit.
