@@ -1,6 +1,5 @@
 README.md
-markdown
-Copy code
+
 # Habit Tracker App
 
 A simple Habit Tracker app built using **Flutter** and **Riverpod** with **Clean Architecture**.
@@ -21,13 +20,12 @@ This app follows **Clean Architecture** with the following structure:
 4. **Core Layer**: Reusable logic like error handling and use cases.
 
 ## **Folder Structure**
-
+   ```
 Here is the folder structure of the app:
 
 lib/ ├── core/ # Core functionalities │ ├── use_cases/ # Common use cases │ ├── errors/ # Error handling ├── features/ # Features like Habit Tracker │ ├── habit_tracker/ # Feature-specific directory │ │ ├── data/ # Data sources (API, DB) │ │ │ ├── models/ # Habit models │ │ │ └── repositories/ │ │ ├── domain/ # Business logic (use cases) │ │ │ ├── entities/ # Habit entity │ │ │ └── repositories/ │ │ └── presentation/ # Screens and widgets │ │ ├── providers/ # State management (Riverpod/Provider) │ │ ├── screens/ # Habit screens │ │ └── widgets/ # UI widgets ├── main.dart # Entry point
+   ```
 
-vbnet
-Copy code
 
 ### **Description of the Folder Structure:**
 
