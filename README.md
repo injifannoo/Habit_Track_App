@@ -64,7 +64,7 @@ The app uses the following dependencies:
 
 2. Navigate to the project directory:
 
- ```bash
+  ```bash
 cd habit_tracker_app
  ```
 
