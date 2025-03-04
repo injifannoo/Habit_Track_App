@@ -62,37 +62,37 @@ The app uses the following dependencies:
    git clone <your-repository-url>
 Navigate to the project directory:
 
-bash
-Copy code
+ ```bash
 cd habit_tracker_app
+ ```bash
+
 Run flutter pub get to install dependencies:
 
-bash
-Copy code
+ ```bash
 flutter pub get
-Run the app using:
+ ```bash
 
-bash
-Copy code
+Run the app using:
+ ```bash
 flutter run
-How the App Works
-Add a Habit: The user can add a new habit through the floating action button. A dialog will appear to input the name of the habit.
-Toggle Habit Status: The user can mark a habit as completed or incomplete by tapping on the habit item. This toggles the completion status.
-Display Habits: All the habits are displayed in a list with their completion status.
-Technologies Used
-Flutter: Framework for building the cross-platform mobile app.
-Riverpod: State management solution to handle the business logic and UI state.
-Clean Architecture: Codebase is structured based on Clean Architecture principles, which promotes separation of concerns, maintainability, and testability.
+ ```bash
+
+## **How the App Works**
+**Add a Habit:** The user can add a new habit through the floating action button. A dialog will appear to input the name of the habit.
+**Toggle Habit Status:** The user can mark a habit as completed or incomplete by tapping on the habit item. This toggles the completion status.
+**Display Habits:** All the habits are displayed in a list with their completion status.
+## **Technologies Used**
+**Flutter:** Framework for building the cross-platform mobile app.
+**Riverpod:** State management solution to handle the business logic and UI state.
+**Clean Architecture:** Codebase is structured based on Clean Architecture principles, which promotes separation of concerns, maintainability, and testability.
+
 Example UI
 Main Screen:
-
 The list displays habits with their names and completion status (checked or unchecked).
 A FloatingActionButton is provided to add a new habit.
 License
 This project is open-source and available under the MIT License.
 
-markdown
-Copy code
 
 ---
 
@@ -105,5 +105,3 @@ Copy code
 - **Technologies Used**: Mentioned that **Flutter**, **Riverpod**, and **Clean Architecture** were used in the development.
 
 - **App Functionality**: Provided a brief description of how the app works — adding habits, toggling their status, and displaying them.
-
-This updated README should provide a clearer understanding of the app's setup and how the code is structured using **Clean Architecture**.
