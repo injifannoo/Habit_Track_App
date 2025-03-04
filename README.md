@@ -60,6 +60,7 @@ The app uses the following dependencies:
 
  ```bash
 git clone <your-repository-url>
+ ```
 
 2. Navigate to the project directory:
    
