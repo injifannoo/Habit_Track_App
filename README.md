@@ -60,11 +60,6 @@ The app uses the following dependencies:
 
    ```bash
    git clone <your-repository-url>
-  ```
-4. Run the app using:
- ```bash
-flutter run
- ```
 
 2. Navigate to the project directory:
  ```bash
